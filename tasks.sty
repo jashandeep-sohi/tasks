@@ -247,7 +247,7 @@
       {
         \vcoffin_set:Nnn \l__tasks_tmpa_coffin
           { \l__tasks_item_width_dim }
-          { \__tasks_setup: #2 }
+          { \__tasks_setup: \strut #2 \strut}
         \__tasks_debug:n
           {
             \coffin_typeset:Nnnnn \l__tasks_tmpa_coffin
@@ -329,7 +329,6 @@
     \dim_set_eq:NN \parskip \parsep
     \dim_set_eq:NN \parindent \listparindent
     \noindent
-    \strut
   }
 
 \cs_new_protected:Npn \__tasks_gset_rows_num:NN #1#2
